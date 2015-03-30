@@ -23,7 +23,12 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
+header {
+	margin-top: 20px;
+	.header-title {
+		text-align: center;
+	}
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
