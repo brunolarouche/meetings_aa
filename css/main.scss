@@ -44,7 +44,7 @@ $grey-color-dark:  darken($grey-color, 25%);
   .top-buffer {
     // margin-top: 40px;
   }
-  a.video-link {
+  a.video-caption {
     display: block;
     cursor: pointer;
     img.youtube-thumb {
@@ -111,6 +111,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 .video-popup a:hover, .video-popup a:active {
   color: #aaaaaa;
+}
+
+.mobile-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Close Button */
