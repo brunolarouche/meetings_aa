@@ -69,16 +69,10 @@ $grey-color-dark:  darken($grey-color, 25%);
   }
 }
 
-@media (max-width: 991px) {
-  .social-networks-big {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .movie-pics-container {
     .movie-pic {
-      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -113,10 +107,34 @@ $grey-color-dark:  darken($grey-color, 25%);
   color: #aaaaaa;
 }
 
-.mobile-video {
+.mobile-video, .site-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-description {
+  margin-top: 10px;
+}
+
+.social-networks-big {
+  position: relative;
+  .follow-block {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 150px;
+
+    .twitter-follow-button {
+      float: right;
+      position: relative;
+      top: 2px;
+    }
+
+    .fb-like {
+      float: left;
+    }
+  }
 }
 
 /* Close Button */
