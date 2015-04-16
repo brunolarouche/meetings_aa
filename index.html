@@ -40,10 +40,7 @@ layout: default
       <iframe class="visible-xs mobile-video" id="player" type="text/html" width="300" height="195" src="http://www.youtube.com/embed/cOExskCDeD4?enablejsapi=1&origin=http://meetingsavecaa.com&autohide=1&rel=0" frameborder="0"></iframe>
     </div>
     <div class="social-networks-big col-md-offset-1 col-md-2 movie-pic top-buffer visible-md visible-lg">
-      <div class="follow-block">
-        <div class="fb-like" data-href="https://www.facebook.com/pages/Andr%C3%A9e-Anne-Brunet-Animatrice/301003233268087" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        <a href="https://twitter.com/aabrunetNRJ" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-show-screen-name="false"></a>
-      </div>
+      {% include follow.html %}
     </div>
     <div class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-4 col-xs-offset-2 col-xs-8 movie-pic top-buffer">
       <a class="video-caption" href="#video5">
@@ -64,6 +61,9 @@ layout: default
       <a class="video-caption" href="#video8">
         <img class="youtube-thumb" src="{{ site.url }}/assets/andreanne.jpg" />
       </a>
+    </div>
+    <div class="bottom-follow social-networks-big col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8 movie-pic visible-sm visible-xs top-buffer">
+      {% include follow.html %}
     </div>
   </div>
 </div>

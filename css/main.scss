@@ -69,11 +69,9 @@ $grey-color-dark:  darken($grey-color, 25%);
   }
 }
 
-@media (min-width: 768px) {
-  .movie-pics-container {
-    .movie-pic {
-      margin-bottom: 30px;
-    }
+.movie-pics-container {
+  .movie-pic {
+    margin-bottom: 30px;
   }
 }
 
@@ -123,11 +121,20 @@ $grey-color-dark:  darken($grey-color, 25%);
 }
 
 .social-networks-big {
-  position: relative;
+  &.bottom-follow {
+    .follow-block {
+      position: relative;
+      top: 0px;
+      .fb-like {
+        margin-bottom: 8px;
+      }
+    }
+  }
   .follow-block {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    top: 50px;
     width: 150px;
 
     .twitter-follow-button {
