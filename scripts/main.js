@@ -9,7 +9,8 @@ $(document).ready(function() {
   });
   $(".video-link").leanModal({ closeButton: ".close-classic" });
 
-  $('#lean_overlay, .close-classic').click(function() {
-    $('.youtube-iframe').remove()
+  $('#lean_overlay, .close-classic').click(function(event) {
+    event.preventDefault();
+    $('.youtube-iframe').remove();
   });
 });
