@@ -53,12 +53,12 @@ $grey-color-dark:  darken($grey-color, 25%);
   }
   img.youtube-thumb {
     width: 100%;
+    float: left;
   }
   img.video-image {
     opacity: 0.2;
-    float: left;
   }
-  .video-date {
+  .video-text {
     width: 100%;
     text-align: center;
     position: relative;
