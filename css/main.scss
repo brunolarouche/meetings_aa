@@ -45,7 +45,6 @@ $grey-color-dark:  darken($grey-color, 25%);
     // margin-top: 40px;
   }
   .video-caption-container {
-
     .video-text {
       cursor: pointer;
     }
@@ -75,6 +74,12 @@ $grey-color-dark:  darken($grey-color, 25%);
     position: absolute;
     top: 90%;
     transform: translateY(-90%);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     &.center {
       top: 50%;
       transform: translateY(-50%);
