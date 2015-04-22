@@ -44,11 +44,13 @@ $grey-color-dark:  darken($grey-color, 25%);
   .top-buffer {
     // margin-top: 40px;
   }
-  a.video-caption {
-    display: block;
-    cursor: pointer;
-    img.youtube-thumb {
+  .video-caption-container {
+    a.video-caption {
+      display: block;
       cursor: pointer;
+      img.youtube-thumb {
+        cursor: pointer;
+      }
     }
   }
   img.youtube-thumb {
@@ -58,12 +60,21 @@ $grey-color-dark:  darken($grey-color, 25%);
   img.video-image {
     opacity: 0.2;
   }
+  img.video-image-invis {
+    opacity: 0;
+  }
   .video-text {
     width: 100%;
+    font-weight: bold;
+    font-size: 18px;
     text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    top: 90%;
+    transform: translateY(-90%);
+    &.center {
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -84,6 +95,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 .movie-pics-container {
   .movie-pic {
+    position: relative;
     margin-bottom: 30px;
   }
 }
@@ -144,20 +156,17 @@ $grey-color-dark:  darken($grey-color, 25%);
     }
   }
   .follow-block {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50px;
-    width: 160px;
-
-    .twitter-follow-button {
-      float: right;
-      position: relative;
-      top: 2px;
-    }
-
-    .fb-like {
-      float: left;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    a {
+      margin: 0 20px 0 20px;
+      img {
+        height: 25px;
+        width: 25px;
+      }
     }
   }
 }
