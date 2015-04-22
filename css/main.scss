@@ -80,6 +80,7 @@ $grey-color-dark:  darken($grey-color, 25%);
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    pointer-events: none;
     &.center {
       top: 50%;
       transform: translateY(-50%);
