@@ -45,6 +45,10 @@ $grey-color-dark:  darken($grey-color, 25%);
     // margin-top: 40px;
   }
   .video-caption-container {
+
+    .video-text {
+      cursor: pointer;
+    }
     a.video-caption {
       display: block;
       cursor: pointer;
