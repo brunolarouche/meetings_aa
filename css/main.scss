@@ -54,6 +54,17 @@ $grey-color-dark:  darken($grey-color, 25%);
   img.youtube-thumb {
     width: 100%;
   }
+  img.video-image {
+    opacity: 0.2;
+    float: left;
+  }
+  .video-date {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .text-justify {
