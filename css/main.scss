@@ -15,7 +15,6 @@ $spacing-unit:     30px;
 
 // $text-color:       #FACD28;
 $text-color:       #F4F4F4;
-$background-color: #121212;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -39,6 +38,14 @@ $grey-color-dark:  darken($grey-color, 25%);
 @import
         "base"
 ;
+
+body {
+  background: url(assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .movie-pics-container {
   .top-buffer {
