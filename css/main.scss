@@ -94,9 +94,20 @@ body {
       transform: translateY(-50%);
     }
   }
-  &.biographie {
+  .biographie {
+    .biographie-image {
+      width: 43%;
+      margin: 4px 0 10px 25px;
+      float: right;
+    }
+    h2 {
+      margin-bottom: 25px;
+    }
     p {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    p:last-child {
+      margin-bottom: 0px;
     }
   }
 }
@@ -141,15 +152,23 @@ body {
   border: 1px solid #242424;
 }
 
-.video-popup a {
+a {
   text-decoration: none;
 }
 
-.video-popup a:link, .video-popup a:visited {
+a.link-homepage {
+  font-size: 14px;
+}
+
+a:link, a:visited {
   color: $text-color;
 }
 
-.video-popup a:hover, .video-popup a:active {
+a.link-homepage:link, a.link-homepage:visited {
+  text-decoration: underline;
+}
+
+a:hover, a:active {
   color: #aaaaaa;
 }
 
@@ -184,20 +203,30 @@ body {
       }
     }
   }
-  .follow-block {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translateY(-50%);
-    a {
-      margin: 0 20px 0 20px;
-      img {
-        height: 30px;
-        width: 30px;
-      }
+}
+
+.follow-block {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  a {
+    margin: 0 20px 0 20px;
+    img {
+      height: 30px;
+      width: 30px;
     }
   }
+}
+
+.biography-description {
+  padding: 0 5px 15px 5px;
+}
+
+.biography-follow {
+  height: 25px;
+  margin: 20px 0 35px 0;
 }
 
 /* Close Button */
