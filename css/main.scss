@@ -47,7 +47,7 @@ body {
   background-size: cover;
 }
 
-.movie-pics-container {
+.page-content-container {
   .top-buffer {
     // margin-top: 40px;
   }
@@ -94,6 +94,11 @@ body {
       transform: translateY(-50%);
     }
   }
+  &.biographie {
+    p {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .text-justify {
@@ -101,7 +106,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .movie-pics-container {
+  .page-content-container {
     .movie-pic.movie-pic-first {
       margin-top: 25px;
     }
@@ -111,7 +116,7 @@ body {
   }
 }
 
-.movie-pics-container {
+.page-content-container {
   .movie-pic {
     position: relative;
     margin-bottom: 30px;
@@ -160,7 +165,7 @@ body {
 }
 
 .site-description {
-  margin-top: 10px;
+  margin-bottom: 10px;
   background-color:rgba(0,0,0,0.4);
   padding: 5px 10px 5px 10px;
   border-radius: 7px;
