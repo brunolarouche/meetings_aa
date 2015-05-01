@@ -66,6 +66,7 @@ body {
   img.youtube-thumb {
     width: 100%;
     float: left;
+    border-radius: 7px;
   }
   img.video-image {
     opacity: 0.4;
@@ -160,6 +161,12 @@ body {
 
 .site-description {
   margin-top: 10px;
+  background-color:rgba(0,0,0,0.4);
+  padding: 5px 10px 5px 10px;
+  border-radius: 7px;
+  p {
+    margin: 0;
+  }
 }
 
 .social-networks-big {
