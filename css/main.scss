@@ -90,7 +90,7 @@ body {
     user-select: none;
     pointer-events: none;
     &.center {
-      top: 50%;
+      top: 47.5%;
       transform: translateY(-50%);
     }
   }
@@ -217,6 +217,9 @@ a:hover, a:active {
       height: 30px;
       width: 30px;
     }
+  }
+  a.fb-link {
+    text-decoration: none;
   }
 }
 
